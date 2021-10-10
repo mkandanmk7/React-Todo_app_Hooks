@@ -2,9 +2,9 @@
 
 # Used here
 
-- hooks;
+- hooks
 
--useState()
--events
--useRef()
--Components
+- useState()
+- events
+- useRef()
+- Components
