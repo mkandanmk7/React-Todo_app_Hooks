@@ -11,8 +11,8 @@ function TodoForm(props) {
     inputRef.current.focus();
   });
 
-  const handleChange = (event) => {
-    setInput(event.target.value);
+  const handleChange = ({ target: { value } }) => {
+    setInput(value);
   };
 
   const handleSubmit = (event) => {
