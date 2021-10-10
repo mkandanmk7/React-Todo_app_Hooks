@@ -9,12 +9,14 @@ function TodoForm(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // props.onSubmit({
-    //   id: Math.floor(Math.random() * 1000),
-    //   text: input,
-    // });
 
-    setInput("");
+    // onsubmit from  parent todoList comp
+    props.onSubmit({
+      id: Math.floor(Math.random() * 1000),
+      text: input,
+    });
+
+    setInput(""); // reset the input after submiting
   };
 
   return (
